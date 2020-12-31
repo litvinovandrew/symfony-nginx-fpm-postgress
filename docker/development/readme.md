@@ -24,4 +24,9 @@ php bin/console make:migration
 php bin/console doctrine:migration:migrate
 
 
-
+# make user security and registration
+php bin/console make:user
+php bin/console make:auth
+php bin/console make:registration-form
+# add migration for newly created User entity 
+php bin/console make:migration
